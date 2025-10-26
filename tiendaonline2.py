@@ -161,7 +161,7 @@ def buscar_usuario_por_id(usuarios, id_busqueda): #Esta función recorre todos l
 
 
 def actualizar_usuario(usuarios): #Esta función se vale de la función de buscar usuario por ID que hicimos antes, y una vez tiene el usuario, te lo muestra y te permite cambiar su nombre y su email, revisando que tenga un "@" y un ".". Si todo sale bien, te muestra los cambios realizados.
-    id_busqueda = leer_int("Teclea el ID del artículo que quieras actualizar: ")
+    id_busqueda = leer_int("Teclea el ID del usuario que quieras actualizar: ")
     usuario = buscar_usuario_por_id(usuarios, id_busqueda)
     if not usuario:
         return
